@@ -1,5 +1,6 @@
 "use strict";
 
+// run code after the entire HTML document has been fully loaded
 document.addEventListener("DOMContentLoaded", function () {
   const button = document.querySelector(".submit-btn");
   const textarea = document.querySelector(".textarea-input");

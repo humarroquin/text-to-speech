@@ -45,14 +45,15 @@ h6 {
 /* VARIABLES */
 :root {
   /* colors */
-  --clr-primary: #31363f;
-  --clr-secondary: #222831;
-  --clr-accent: #76abae;
-  --clr-text: #eeeeee;
+  --clr-bg-light: hsl(219, 13%, 22%);
+  --clr-bg-dark: hsl(216, 18%, 16%);
+  --clr-accent: hsl(183, 26%, 57%);
+  --clr-text: hsl(0, 0%, 93%);
+  --clr-placeholder: hsl(186, 34%, 70%);
 
   /* font family */
-  --ff-headings: "Poppins", serif;
-  --ff-body: "Poppins", serif;
+  --ff-headings: "Poppins", sans-serif;
+  --ff-body: "Poppins", sans-serif;
 
   /* font weights */
   --fw-400: 500;
@@ -69,7 +70,7 @@ body {
 
   display: grid;
   place-content: center;
-  background-color: var(--clr-secondary);
+  background-color: var(--clr-bg-dark);
 }
 
 .container {
@@ -80,7 +81,7 @@ body {
   margin-inline: auto;
 
   text-align: center;
-  background-color: var(--clr-primary);
+  background-color: var(--clr-bg-light);
   padding: 2rem;
   border-radius: 1rem;
 
@@ -108,11 +109,11 @@ body {
   resize: none;
 }
 ::placeholder {
-  color: #9ac8cd;
+  color: var(--clr-placeholder);
 }
 .textarea-wrapper button {
-  height: 30px;
-  width: 30px;
+  height: 1.875rem;
+  width: 1.875rem;
   border-radius: 50%;
   color: var(--clr-text);
   background-color: var(--clr-accent);
